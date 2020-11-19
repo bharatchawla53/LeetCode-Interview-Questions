@@ -1,4 +1,4 @@
-package com.company;
+package com.company.arrays;
 
 public class minimumBribes {
     public static void main(String[] args) {

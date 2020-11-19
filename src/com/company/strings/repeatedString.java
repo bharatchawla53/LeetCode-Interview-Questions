@@ -1,4 +1,4 @@
-package com.company;
+package com.company.strings;
 
 public class repeatedString {
     public static void main(String[] args) {

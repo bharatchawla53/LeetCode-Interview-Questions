@@ -1,4 +1,4 @@
-package com.company;
+package com.company.hashTable;
 
 import java.util.Arrays;
 import java.util.HashSet;

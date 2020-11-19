@@ -1,4 +1,4 @@
-package com.company;
+package com.company.arrays;
 
 public class countNegativeNumbersInGrid {
     public static void main(String[] args) {

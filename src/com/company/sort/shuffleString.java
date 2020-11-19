@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sort;
 
 public class shuffleString {
     public static void main(String[] args) {
