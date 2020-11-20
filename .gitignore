@@ -1,2 +1,6 @@
 
 .idea/vcs.xml
+*.class
+out/production/Coding_Challenges/com/company/trees/binarySearch.class
+*.class
+out/production/Coding_Challenges/com/company/AdvancedArithmetic.class
