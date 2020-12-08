@@ -10,17 +10,6 @@ public class buildArrayWithStack {
     }
 
     private static List<String> buildArray(int[] target, int n) {
-        /*List<String> result = new ArrayList<>();
-
-        for (int i = 1, j = 0; i <= n && j < target.length; i++) {
-            result.add("Push");
-            if (i == target[j]) {
-                j += 1;
-            } else {
-                result.add("Pop");
-            }
-        }
-        return result;*/
         List<String> result = new ArrayList<>();
         int val = 1;
         int i = 0;
