@@ -1,4 +1,4 @@
-package com.company.arrays;
+package com.company.strings;
 
 public class largestMergeOfTwoStrings {
     public static void main(String[] args) {
