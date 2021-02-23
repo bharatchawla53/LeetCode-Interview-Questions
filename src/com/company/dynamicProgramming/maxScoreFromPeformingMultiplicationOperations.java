@@ -1,4 +1,4 @@
-package com.company.arrays;
+package com.company.dynamicProgramming;
 
 
 public class maxScoreFromPeformingMultiplicationOperations {
@@ -12,7 +12,7 @@ public class maxScoreFromPeformingMultiplicationOperations {
 
     private static int maxScore(int[] nums, int[] multipliers) {
        int l = 0;
-       int r = nums.length-1;
+       //int r = nums.length-1;
        int index = 0;
        dp = new int[multipliers.length][multipliers.length];
        return helper(nums, multipliers, l, index);
