@@ -4,9 +4,10 @@ import java.util.*;
 
 public class findingUsersActiveMins {
     public static void main(String[] args) {
-        int[][] logs = {{0,5},{1,2},{0,2},{0,5},{1,3}};
-        int k = 5;
+        int[][] logs = {{3,50},{7,10},{12,25}};
+        int k = 10;
         Arrays.stream(findingUsersActiveMinutes(logs, k)).forEach(System.out::println);
+        calculateTax(logs, k);
     }
 
     private static int[] findingUsersActiveMinutes(int[][] logs, int k) {
@@ -25,4 +26,34 @@ public class findingUsersActiveMins {
 
         return answer;
     }
+
+    private static double calculateTax(int[][] brackets, int income) {
+        double taxOwed = 0.0;
+        if (income == 0) {
+            return taxOwed;
+        }
+        for (int i = 0; i < brackets.length; i++) {
+            if (income != 0) {
+                double upper = brackets[i][0];
+                double percent = brackets[i][1];
+
+                double prevUpper;
+                if (i > 0) {
+                    prevUpper = brackets[i-1][0];
+                    upper = upper - prevUpper;
+                }
+
+                if (upper > income) {
+                    upper = income;
+                }
+
+                double cal = upper * percent / 100;
+                taxOwed += cal;
+                income -= upper;
+            }
+        }
+
+        return taxOwed;
+    }
+
 }

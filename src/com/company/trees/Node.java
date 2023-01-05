@@ -8,7 +8,7 @@ public class Node {
     public Node left;
     public Node right;
 
-    List<Node> children = new ArrayList<>();
+    public List<Node> children = new ArrayList<>();
 
 
     public Node() { }
