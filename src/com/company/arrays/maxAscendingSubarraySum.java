@@ -1,3 +1,4 @@
+/*
 package com.company.arrays;
 
 import javafx.print.Collation;
@@ -33,3 +34,4 @@ public class maxAscendingSubarraySum {
     }
 
 }
+*/
